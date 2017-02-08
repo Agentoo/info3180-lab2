@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block css %}
+<link rel="stylesheet" href = "{{url_for('static', filename='/css/app.css/')}}" />
+{% endblock %}
+
+{% block main %}
+<div id="wrapper">
+    <h1>Profile</h1>
+    <hr />
+    <img src="http://pldh.net/media/pokemon/ken_sugimori/original/005.png" alt="Charmeleon" />
+		
+	<div id="leftcolumn">
+        
+        <p>Below is Charmeleon's Pok&eacute;dex info</p>
+        <hr />
+        <p>{{ today }}</p>
+        <hr />
+        <p>Name: Charmeleon</p>
+        <p>Pok&eacute;-number: 005</p>
+        <p>Type: Fire</p>
+        <p>Gender: Male</p>
+        <hr />
+        <p>Charmeleon, the Flame Pokémon. It has razor sharp claws and its tail is exceptionally strong.</p>
+    </div>
+</div>
+{% endblock %}
